@@ -1,5 +1,6 @@
 package com.example.tema2_ciclosdevida;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.activity.EdgeToEdge;
@@ -52,5 +53,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onDestroy(){
         super.onDestroy();
         Log.i("Ejemplo", "Estoy on Destroy");
+        Intent ejemplo = new Intent(this, MainActivity2.class);
+        startActivity(ejemplo);
     };
+
 }
