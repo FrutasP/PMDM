@@ -421,6 +421,11 @@ public class MainActivity extends AppCompatActivity {
 
                 banderaIgual = false;
 
+                if(textoActual.endsWith(",")){
+
+                    textoActual = textoActual.substring(0, textoActual.length() -1);
+                }
+
                 if(textoActual.endsWith("+") || textoActual.endsWith("-") || textoActual.endsWith("*") || textoActual.endsWith("/")){
 
                     String textoSimbolo = textoActual.substring(0, textoActual.length() -1);
@@ -443,6 +448,11 @@ public class MainActivity extends AppCompatActivity {
 
                 banderaIgual = false;
 
+                if(textoActual.endsWith(",")){
+
+                    textoActual = textoActual.substring(0, textoActual.length() -1);
+                }
+
                 if(textoActual.endsWith("+") || textoActual.endsWith("-") || textoActual.endsWith("*") || textoActual.endsWith("/")){
 
                     String textoSimbolo = textoActual.substring(0, textoActual.length() -1);
@@ -463,6 +473,11 @@ public class MainActivity extends AppCompatActivity {
 
                 banderaIgual = false;
 
+                if(textoActual.endsWith(",")){
+
+                    textoActual = textoActual.substring(0, textoActual.length() -1);
+                }
+
                 if(textoActual.endsWith("+") || textoActual.endsWith("-") || textoActual.endsWith("*") || textoActual.endsWith("/")){
 
                     String textoSimbolo = textoActual.substring(0, textoActual.length() -1);
@@ -482,6 +497,11 @@ public class MainActivity extends AppCompatActivity {
                 String textoActual = textCalculadora.getText().toString();
 
                 banderaIgual = false;
+
+                if(textoActual.endsWith(",")){
+
+                    textoActual = textoActual.substring(0, textoActual.length() -1);
+                }
 
                 if(textoActual.endsWith("+") || textoActual.endsWith("-") || textoActual.endsWith("*") || textoActual.endsWith("/")){
 
