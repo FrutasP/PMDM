@@ -573,7 +573,7 @@ public class MainActivity extends AppCompatActivity {
 
                 String operacion = textCalculadora.getText().toString();
 
-                if(operacion.endsWith("/0") || operacion.endsWith("/0,0") || operacion.endsWith("/0,00")){
+                if(operacion.endsWith("/0") || operacion.endsWith("/0,0") || operacion.endsWith("/0,00") || operacion.endsWith("/0,")){
 
                     textCalculadora.setText("Error de division");
                     banderaIgual = true;
