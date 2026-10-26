@@ -182,7 +182,7 @@
         android:layout_columnSpan="2"
         android:layout_gravity="fill_horizontal"
         android:layout_columnWeight="2"
-        android:text="C"
+        android:text="AC"
         tools:ignore="HardcodedText"/>
 
     <Button
@@ -192,7 +192,7 @@
         android:layout_columnSpan="2"
         android:layout_gravity="fill_horizontal"
         android:layout_columnWeight="2"
-        android:text="AC"
+        android:text="C"
         tools:ignore="HardcodedText"/>
 
 

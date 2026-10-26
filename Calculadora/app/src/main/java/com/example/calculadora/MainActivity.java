@@ -430,6 +430,8 @@ public class MainActivity extends AppCompatActivity {
 
                     textCalculadora.setText(textoActual + "/");
                 }
+
+
             }
         });
 
@@ -526,6 +528,13 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 String operacion = textCalculadora.getText().toString();
+
+                if(operacion.endsWith("/0") || operacion.endsWith("/0,0") || operacion.endsWith("/0,00")){
+
+                    textCalculadora.setText("Error de division");
+                    banderaIgual = true;
+                    return;
+                }
 
                 if(operacion.endsWith("+") || operacion.endsWith("-") || operacion.endsWith("*") || operacion.endsWith("/")){
 
