@@ -1,0 +1,27 @@
+<resources>
+    <string name="app_name">CuentaBar</string>
+    <string name="cuenta">CUENTA</string>
+    <string name="total">Total de la cuenta(€)</string>
+    <string name="propina">Incluir propina</string>
+    <string name="metodoPago">Metodo de pago</string>
+    <string name="efectivo">Efectivo</string>
+    <string name="tarjeta">Tarjeta</string>
+    <string name="calificacion">Calificacion del servicio</string>
+    <string name="resultado">Resultado de la cuenta</string>
+    <string name="textoFinal">La calificacion del camarero es un </string>
+    <string name="textoFinal2"> y paga con </string>
+    <string name="calcular">Calcular</string>
+
+
+
+    <string name="error_cuenta">Error, introduce la cantidad de la cuenta</string>
+    <string name="pago_no_seleccionado">No Seleccionado</string>
+    <string name="pago_efectivo">Efectivo</string>
+    <string name="pago_tarjeta">Tarjeta</string>
+
+    <!-- Fragmentos de texto para unir en Java -->
+    <string name="texto_calificacion">"La calificación del camarero es un "</string>
+    <string name="texto_y_paga">" y paga con "</string>
+    <string name="texto_no_califica">No se califica al camarero. Pago con "</string>
+
+</resources>

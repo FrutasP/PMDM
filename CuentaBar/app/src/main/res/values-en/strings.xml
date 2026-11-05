@@ -1,0 +1,24 @@
+<resources>
+    <string name="app_name">BarBill</string>
+    <string name="cuenta">BILL</string>
+    <string name="total">Total bill amount(€)</string>
+    <string name="propina">Include tip</string>
+    <string name="metodoPago">Payment method</string>
+    <string name="efectivo">Cash</string>
+    <string name="tarjeta">Card</string>
+    <string name="calificacion">Service rating</string>
+    <string name="resultado">Bill result</string>
+    <string name="textoFinal">The waiter\'s rating is </string>
+    <string name="textoFinal2"> and pays with </string>
+    <string name="calcular">Calculate</string>
+
+    <string name="error_cuenta">Error, please enter the bill amount</string>
+    <string name="pago_no_seleccionado">Not Selected</string>
+    <string name="pago_efectivo">Cash</string>
+    <string name="pago_tarjeta">Card</string>
+
+
+    <string name="texto_calificacion">The waiter\'s rating is </string>
+    <string name="texto_y_paga"> and pays with </string>
+    <string name="texto_no_califica">No rating for the waiter. Paid with </string>
+</resources>

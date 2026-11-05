@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <!-- Tus nuevos colores personalizables -->
+    <color name="mi_color_principal">#575656</color>
+    <color name="mi_color_secundario">#FFC107</color>
+    <color name="mi_color_Error">#FF0000</color>
+</resources>
