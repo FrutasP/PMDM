@@ -7,27 +7,27 @@ void main() {
 class MyApp extends StatelessWidget {
   const MyApp({super.key});
 
-  // This widget is the root of your application.
+  // Este widget es la raíz de tu aplicación.
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        // This is the theme of your application.
+        // Este es el tema de tu aplicación.
         //
-        // TRY THIS: Try running your application with "flutter run". You'll see
-        // the application has a purple toolbar. Then, without quitting the app,
-        // try changing the seedColor in the colorScheme below to Colors.green
-        // and then invoke "hot reload" (save your changes or press the "hot
-        // reload" button in a Flutter-supported IDE, or press "r" if you used
-        // the command line to start the app).
+        // PRUEBA ESTO: Intenta ejecutar tu aplicación con "flutter run". Verás
+        // que la aplicación tiene una barra de herramientas morada. Luego, sin cerrar la aplicación,
+        // intenta cambiar el seedColor en el colorScheme de abajo a Colors.green
+        // y luego invoca "hot reload" (guarda tus cambios o presiona el botón "hot
+        // reload" en un IDE compatible con Flutter, o presiona "r" si usaste
+        // la línea de comandos para iniciar la aplicación).
         //
-        // Notice that the counter didn't reset back to zero; the application
-        // state is not lost during the reload. To reset the state, use hot
-        // restart instead.
+        // Observa que el contador no volvió a cero; el estado de la aplicación
+        // no se pierde durante la recarga. Para reiniciar el estado, usa hot
+        // restart en su lugar.
         //
-        // This works for code too, not just values: Most code changes can be
-        // tested with just a hot reload.
+        // Esto también funciona para el código, no solo para los valores: la mayoría de los cambios de código se pueden
+        // probar simplemente con un hot reload.
         colorScheme: .fromSeed(seedColor: Colors.green),
       ),
       home: const MyHomePage(title: 'Nuevo titulo '),
@@ -35,17 +35,30 @@ class MyApp extends StatelessWidget {
   }
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
 class MyHomePage extends StatefulWidget {
   const MyHomePage({super.key, required this.title});
 
-  // This widget is the home page of your application. It is stateful, meaning
-  // that it has a State object (defined below) that contains fields that affect
-  // how it looks.
+  // Este widget es la página de inicio de tu aplicación. Tiene estado (stateful), lo que significa
+  // que tiene un objeto State (definido abajo) que contiene campos que afectan
+  // cómo se ve.
 
-  // This class is the configuration for the state. It holds the values (in this
-  // case the title) provided by the parent (in this case the App widget) and
-  // used by the build method of the State. Fields in a Widget subclass are
-  // always marked "final".
+  // Esta clase es la configuración para el estado. Mantiene los valores (en este
+  // caso el título) proporcionados por el padre (en este caso el widget App) y
+  // usados por el método build del State. Los campos en una subclase de Widget
+  // siempre se marcan como "final".
 
   final String title;
 
@@ -53,55 +66,80 @@ class MyHomePage extends StatefulWidget {
   State<MyHomePage> createState() => _MyHomePageState();
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
 
   void _incrementCounter() {
     setState(() {
-      // This call to setState tells the Flutter framework that something has
-      // changed in this State, which causes it to rerun the build method below
-      // so that the display can reflect the updated values. If we changed
-      // _counter without calling setState(), then the build method would not be
-      // called again, and so nothing would appear to happen.
+      // Esta llamada a setState le indica al framework de Flutter que algo ha
+      // cambiado en este State, lo que hace que vuelva a ejecutar el método build de abajo
+      // para que la pantalla pueda reflejar los valores actualizados. Si cambiáramos
+      // _counter sin llamar a setState(), entonces el método build no se
+      // volvería a llamar, y por lo tanto parecería que no pasa nada.
       _counter--;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    // This method is rerun every time setState is called, for instance as done
-    // by the _incrementCounter method above.
+    // Este método se vuelve a ejecutar cada vez que se llama a setState, por ejemplo como lo hace
+    // el método _incrementCounter de arriba.
     //
-    // The Flutter framework has been optimized to make rerunning build methods
-    // fast, so that you can just rebuild anything that needs updating rather
-    // than having to individually change instances of widgets.
+    
+    ElevatedButton(
+      onPressed: (){
+        _counter++;
+      }
+      child: Text('Pulsame'),
+    )
+    
+    
+    
+    // El framework de Flutter ha sido optimizado para hacer que volver a ejecutar los métodos build
+    // sea rápido, de modo que puedas reconstruir solo lo que necesita actualizarse en lugar
+    // de tener que cambiar individualmente las instancias de los widgets.
     return Scaffold(
       appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
+        // PRUEBA ESTO: Intenta cambiar el color aquí a un color específico (¿a
+        // Colors.amber, quizás?) y activa un hot reload para ver cómo el AppBar
+        // cambia de color mientras que los demás colores permanecen iguales.
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
-        // Here we take the value from the MyHomePage object that was created by
-        // the App.build method, and use it to set our appbar title.
+        // Aquí tomamos el valor del objeto MyHomePage que fue creado por
+        // el método App.build, y lo usamos para establecer el título de nuestra appbar.
         title: Text(widget.title),
       ),
       body: Center(
-        // Center is a layout widget. It takes a single child and positions it
-        // in the middle of the parent.
+        // Center es un widget de diseño (layout). Toma un único hijo y lo posiciona
+        // en el medio del padre.
         child: Column(
-          // Column is also a layout widget. It takes a list of children and
-          // arranges them vertically. By default, it sizes itself to fit its
-          // children horizontally, and tries to be as tall as its parent.
+          // Column también es un widget de diseño (layout). Toma una lista de hijos y
+          // los organiza verticalmente. Por defecto, ajusta su tamaño para encajar con sus
+          // hijos horizontalmente, e intenta ser tan alto como su padre.
           //
-          // Column has various properties to control how it sizes itself and
-          // how it positions its children. Here we use mainAxisAlignment to
-          // center the children vertically; the main axis here is the vertical
-          // axis because Columns are vertical (the cross axis would be
+          // Column tiene varias propiedades para controlar cómo ajusta su tamaño y
+          // cómo posiciona a sus hijos. Aquí usamos mainAxisAlignment para
+          // centrar los hijos verticalmente; el eje principal aquí es el eje
+          // vertical porque las Column son verticales (el eje transversal sería
           // horizontal).
           //
-          // TRY THIS: Invoke "debug painting" (choose the "Toggle Debug Paint"
-          // action in the IDE, or press "p" in the console), to see the
-          // wireframe for each widget.
+          // PRUEBA ESTO: Invoca "debug painting" (elige la acción "Toggle Debug Paint"
+          // en el IDE, o presiona "p" en la consola), para ver el
+          // esquema (wireframe) de cada widget.
           mainAxisAlignment: .center,
           children: [
             const Text('You have pushed the button this many times:'),

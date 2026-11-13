@@ -4,6 +4,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ArrayAdapter;
+import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.TextView;
 
@@ -18,14 +19,14 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private ListView lista;
+    private GridView lista;
     private TextView texto;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.gridview);
 
             List<String> data = Arrays.asList("España", "Francia", "Letonia", "Alemania", "Belgica", "Italia", "portugal", "Holanda", "Lituania", "Polonia");
 
